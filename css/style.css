@@ -29,6 +29,29 @@ body{
     color: #5e5e5e;
 }
 
+.default__btn {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 30px 8px 24px;
+    border: 1px solid #ffc222;
+    border-right-width: 20px;
+    position: relative;
+}
+
+.default__btn:after{
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -12px;
+}
+
+/* HEADER */
+
 header{
     font-family: 'Roboto', sans-serif;
 }
@@ -44,8 +67,19 @@ header{
     background-color: #ffc222;
     padding: 5px 20px 4px 50px;
     font-style: 16px;
+    display: block;
+    position: relative;
 }
-.header__btn:after{
+
+.header__btn:before{
+    content: "\f0b1";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 20px;
+    color: #1b1b1b;
+}
+
+.header__contacts:after{
     content: "";
     clear: both;
     display: block;
@@ -56,6 +90,7 @@ header{
     color: #cbcacb;
     letter-spacing: 0.25px;
     line-height: 45px;
+    position: relative;
 }
 
 .header__phone{
@@ -63,6 +98,140 @@ header{
     padding-right: 30px;
 }
 
+.header__phone:before{
+    content: "\f095";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+
 .header__email{
     padding-left: 24px;
+}
+
+.header__email:before{
+    content: "\f003";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+
+.header__content{
+    padding: 34px 0px 23px;
+}
+
+.header__content-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li{
+    display: inline-block;
+}
+ 
+.menu a{
+    color: #323232;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid transparent;
+    padding: 0 16px;
+    transition: all .3s;
+}
+
+.menu a:hover{
+    border-color: #ffc222;
+}
+
+.menu li + li{
+    padding-left: 10px;
+}
+
+/* MODAL WINDOW */
+
+#modal{
+    display: none;
+}
+
+/* SLIDER */
+
+.slider{
+    background-image: url(../img/slider-fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.slider__item-content{
+    text-align: center;
+    padding-top: 110px;
+    min-width: 665px;
+    margin: 0 auto;
+}
+
+.slider__tittle{
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.slider__text{
+    line-height: 24px;
+    font-size: 18px;
+    color: #d3d2d2;
+    margin-bottom: 50px;
+}
+
+.slider__inner{
+    position: relative;
+}
+
+.slick__btn{
+    position: absolute;
+    top: 85%;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.slick__btn.slick-disabled{
+    cursor: default;
+    border: none;
+    visibility: hidden;
+}
+
+.slick__btn:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'icomoon';
+    color: #fff;
+}
+
+.slick-prev{
+    left: 0;
+}
+
+.slick-prev:before{
+    content: "\f104";
+}
+
+.slick-next{
+    right: 0;
+}
+
+.slick-next:before{
+    content: "\f105";
 }
