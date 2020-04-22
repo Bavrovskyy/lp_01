@@ -1,0 +1,324 @@
+@media (max-width:1156px){
+
+    /* SERVICES */
+
+    .services__items{
+        display: block;
+    }
+    
+    .services__item{
+        max-width: 80%;
+        min-height: 330px;
+        margin: 30px auto;
+    }
+
+    /* ABOUT */
+
+    .about__inner{
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    /* FORM */
+
+    .form__inner{
+        background-image: none;
+        padding-bottom: 55px;
+    }
+
+    .form__box{
+        max-width: 100%;
+    }
+
+    .form__box-inner{
+        display: block;
+    }
+
+    .form__box-left,
+    .form__box-right{
+        max-width: 60%;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    /* NEWS */
+
+    .news{
+        padding-bottom: 40px;
+    }
+
+    .news__inner{
+        display: block;
+    }
+
+    .news__slider{
+        max-width: 100%;
+        margin-bottom: 85px;
+    }
+
+    .news__blog-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .news__blog{
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    /* FOOTER */
+
+    .footer__info{
+        margin-right: 10px;
+    }
+
+    .footer__map{
+        width: 70%;
+    }
+}
+
+@media (max-width: 900px){
+
+    /* SLIDER */
+
+    .slider .slick__btn{
+        display: none !important;
+    }
+
+    /* SERVICES */
+
+    .services__top,
+    .news__top{
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .services__btn,
+    .news__btn{
+        text-align: center;
+        margin: 25px auto 0;
+    }
+
+    .services__title-box, 
+    .form__title-box,
+    .news__title-box{
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+
+    .services__title-box:before,
+    .form__title-box:before,
+    .news__title-box:before{
+        display: none;
+    }
+
+    /* FORM */
+
+    .form__box{
+        padding-top: 0;
+    }
+
+    .form__box-left,
+    .form__box-right{
+        max-width: 70%;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    .form__box-inner button{
+        float: none;
+    }
+
+    /* ADVANTAGES */
+
+    .advantages{
+        padding-top: 10px;
+    }
+
+    .advantages__inner{
+        display: block;
+    }
+    
+    .advantages__item{
+        max-width: 100%;
+        min-height: 0;
+        margin: 20px auto 0;
+    }
+
+    /* NEWS */
+
+    .news__slider{
+        margin-bottom: 30px;
+    }
+
+    .news__slider-inner .slick__btn{
+        display: none !important;
+    }
+
+    /* FOOTER */
+
+    .footer__map{
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px){
+
+    /* HEADER */
+
+    .header__top{
+        padding: 0 0 10px;
+    }
+
+    .header__contacts{
+        text-align: center;
+    }
+
+    .header__btn{
+        float: none;
+        padding: 5px 20px 4px;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .header__btn-menu{
+        display: block;
+    }
+
+    .menu ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: 22px;
+        z-index: 5;
+    }
+    
+    .menu li{
+        display: block;
+        text-align: center;
+    }
+
+    .menu li + li{
+        padding-left: 0;
+    }
+
+    .menu a{
+        display: block;
+        background-color: #ffc222;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        margin: 0 15px;
+    }
+
+    /* FOOTER */
+
+    .footer__inner{
+        display: block;
+        text-align: center;
+    }
+
+    .footer__info{
+        margin: 0 auto;
+    }
+
+    .footer__inner .header__btn{
+        display: block;
+    }
+
+    .footer__map{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer__content{
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width:600px){
+
+    /* SERVICES */
+    
+    .services__item{
+        max-width: 100%;
+    }
+
+    /* NEWS */
+
+    .news__slider{
+        padding: 50px 15px 25px 25px;
+    }
+
+    .news__blog-inner{
+        display: block;
+    }
+
+    .news__blog{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .news__images{
+        margin: 0 auto;
+    }
+
+    /* FOOTER */
+
+    .footer__copy{
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+
+@media (max-width: 414px){
+
+    /* SLIDER */
+
+    .slider__tittle{
+        font-size: 24px;
+    }
+
+    .slider__text{
+        font-size: 16px;
+    }
+
+    /* ADVANTAGES */
+
+    .advantages__item{
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px){
+
+    /* HEADER */
+
+    .header__btn:before{
+        display: block;
+    }
+}
+
+@media (max-width: 375px){
+
+    /* HEADER */
+
+    .header__contacts a{
+        line-height: 30px;
+    }
+
+    .header__email{
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 701px){
+
+    /* HEADER */
+
+    .menu ul{
+        display: block !important;
+    }
+}
